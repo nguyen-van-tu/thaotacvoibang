@@ -1,0 +1,15 @@
+create database demo;
+use demo;
+create table student
+(
+    id int not null auto_increment,
+    last_name nvarchar(255) not null default 'nguyễn',
+    first_name nvarchar(255) not null ,
+    birday date,
+    constraint pk primary key (id)
+);
+alter table student add column aac nvarchar(255) ;
+update student set demo.student.email = 'tutuan297@gmail.com' where id = 1;
+alter table student drop column aac;
+alter table student change column id studentID int;
+
